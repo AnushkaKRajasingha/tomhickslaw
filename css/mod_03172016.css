@@ -1,0 +1,86 @@
+@CHARSET "ISO-8859-1";
+.mobile-menu-nav {
+/* hide responsive menu from desktop version */
+    display: none;
+}
+.mobile-menu-nav, .mobile-menu-nav div {
+	margin: 0 !important;
+}
+@media (max-width: 640px){
+.primary-nav {/* hide desktop menu after 640 */
+    display: none;
+}
+.mobile-menu-nav {/* show responsive menu after 640 */
+    display: block;
+}
+}
+
+/* === NAV === */
+#menu-toggle-primary a{
+	display: block;
+	    padding-left: 15% !important;
+    background-position: 5%;
+    background-image: url('../images/taxes-menu-icon.png');
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+}
+#menu-toggle-primary a:before{
+	
+	font-weight: 400;
+	font-size: 20px;
+	font-size: 2rem;
+	vertical-align: top;
+	margin-right: 0.5rem;
+	margin-right: 5px;
+	-webkit-font-smoothing: antialiased;
+}
+#menu-toggle-primary a.close-menu-primary:before{
+	
+}
+/* Hide Menu */
+.mobile-menu{
+	display: none;
+}
+#menu-toggle-primary a.close-menu-primary{
+	display: none;
+}
+/* Show Menu */
+#mobile-menu-nav:target .mobile-menu{
+	display: block;
+}
+#mobile-menu-nav:target #menu-toggle-primary a.open-menu-primary{
+	display: none;
+}
+#mobile-menu-nav:target #menu-toggle-primary a.close-menu-primary{
+	display: block;
+}
+
+
+ul.mobile-menu li{
+	width: 80%;
+	margin-left: 10%;
+	border-bottom: dotted 1px #fff;
+}
+
+ul#menu-main-menu-1.mobile-menu ul.sub-menu {
+	display: block;
+	position: static;
+	width: 100%;
+	-moz-box-shadow:none;
+	-webkit-box-shadow: none; 
+	box-shadow: none; 
+	    border-top: dotted 1px #fff;
+}
+ul#menu-main-menu-1.mobile-menu ul.sub-menu li{
+	width: 90%;
+}
+ul#menu-main-menu-1.mobile-menu ul.sub-menu li:last-of-type{
+	border-bottom:none;
+}
+
+ul#menu-main-menu-1.mobile-menu ul.sub-menu a{
+	color: #fff;
+	border-bottom: none;
+	width: 100%;
+	background: inherit;
+}

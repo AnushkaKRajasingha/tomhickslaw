@@ -1,0 +1,44 @@
+@CHARSET "ISO-8859-1";
+/* override existing classes */
+#page.akrmod {
+	margin: 0em auto;
+	max-width: 1000px;
+}
+#site-description {
+    display: none;
+}
+#page.akrmod #site-title {
+    margin-right: 35%;
+    padding: 0;
+}
+#page.akrmod #branding hgroup {
+    margin: 0 2%;
+}
+.singular #content, .left-sidebar.singular #content{
+    margin: 0 !important; 
+}    
+.singular .entry-header, .singular .entry-content, .singular footer.entry-meta, .singular #comments-title{
+	width: 80% !important;
+}
+.akrmod #access {
+	background: #222; /* Show a solid color for older browsers */
+	background: -moz-linear-gradient(#00A9DE, #00325D);
+	background: -o-linear-gradient(#00A9DE, #00325D);
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#00A9DE), to(#00325D)); /* older webkit syntax */
+	background: -webkit-linear-gradient(#00A9DE, #00325D);
+	-webkit-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	box-shadow: rgba(0, 0, 0, 0.4) 0px 1px 2px;
+	clear: both;
+	display: block;
+	float: left;
+	margin: 0 auto 6px;
+	width: 100%;
+}
+
+#main {    
+    padding: 0em 0 0 !important;
+}
+.singular.page .hentry {
+    padding: 0em 0 0 !important;
+}

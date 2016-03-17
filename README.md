@@ -1,2 +1,2 @@
 # tomhickslaw
-tomhickslaw - wenty Eleven Child Theme
+tomhickslaw - Twenty Eleven Child Theme
